@@ -72,8 +72,8 @@ jobs:
           cd $config_dir
           for m in $targets; do if [ -f $m.config ]; then \
           ##科学上网##
-          echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> $m.config #科学上网插件，选择n后全部有关插件都不集成
-          echo "CONFIG_FIRMWARE_INCLUDE_XRAY=y" >> $m.config #集成xray执行文件  ~4.5M
+          echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> $m.config #科学上网插件，选择n后全部有关插件都不集成
+          echo "CONFIG_FIRMWARE_INCLUDE_XRAY=n" >> $m.config #集成xray执行文件  ~4.5M
           echo "CONFIG_FIRMWARE_INCLUDE_V2RAY=n" >> $m.config #集成v2ray执行文件
           echo "CONFIG_FIRMWARE_INCLUDE_TROJAN=n" >> $m.config #集成trojan执行文件  ~1.2M
           echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >> $m.config #simple-obfs混淆插件
@@ -94,7 +94,7 @@ jobs:
           echo "CONFIG_FIRMWARE_INCLUDE_NVPPROXY=n" >> $m.config #NVPPROXY
           ##文件管理##
           echo "CONFIG_FIRMWARE_INCLUDE_CADDY=y" >> $m.config #在线文件管理服务
-          echo "CONFIG_FIRMWARE_INCLUDE_CADDYBIN=y" >> $m.config #集成caddu执行文件，此文件有13M,请注意固件大小
+          echo "CONFIG_FIRMWARE_INCLUDE_CADDYBIN=n" >> $m.config #集成caddu执行文件，此文件有13M,请注意固件大小
           ##音乐解锁##
           echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> $m.config #网易云解锁
           echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> $m.config #网易云解锁GO版本执行文件（2M多）注意固件超大小
