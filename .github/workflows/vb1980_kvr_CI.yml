@@ -95,7 +95,7 @@ jobs:
           ##文件管理##
           echo "CONFIG_FIRMWARE_INCLUDE_CADDY=y" >> $m.config #在线文件管理服务
           echo "CONFIG_FIRMWARE_INCLUDE_CADDYBIN=n" >> $m.config #集成caddu执行文件，此文件有13M,请注意固件大小
-          echo "CONFIG_FIRMWARE_INCLUDE_OPENSSH=y" >> $m.config
+          echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y" >> $m.config
           ##音乐解锁##
           echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> $m.config #网易云解锁
           echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> $m.config #网易云解锁GO版本执行文件（2M多）注意固件超大小
